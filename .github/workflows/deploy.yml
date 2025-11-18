@@ -1,5 +1,9 @@
 name: Deploy Hugo site to GitHub Pages
 
+permissions:
+  contents: write
+  pages: write
+
 on:
   push:
     branches:
@@ -14,11 +18,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Cài Hugo
+      # 2. Cài Hugo (bật extended nếu site dùng SCSS/SASS)
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.150.0" # thay bằng version Hugo bạn dùng
+          extended: true
 
       # 3. Build website
       - name: Build
@@ -30,3 +35,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: gh-pages
