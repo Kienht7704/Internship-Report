@@ -27,7 +27,7 @@ Estimated monthly infrastructure costs of $16 - $50 USD, totaling approximately 
 ### 3. Solution Architecture  
 The platform applies AWS Serverless architecture to manage personal schedule and event data, with the capability to easily scale from a single user to millions of individual users. API requests are received through Amazon API Gateway and processed by AWS Lambda, while data is stored in Amazon DynamoDB to ensure fast query speed and low latency. Amazon EventBridge handles reminder scheduling logic, triggers Lambda, and sends notifications. AWS Amplify provides an intuitive web/mobile interface, secured by Amazon Cognito to safely manage access permissions for each user.    
 
-![Aurora Time Platform Architecture](images/2-proposal/platform_architecture.jpeg)
+![Aurora Time Platform Architecture](/images/2-proposal/platform_architecture.jpeg)
 
 #### *AWS Services Used*  
 - *AWS Lambda*: Processes business logic for event CRUD operations and triggers scheduled reminder tasks.  

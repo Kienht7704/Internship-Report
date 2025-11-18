@@ -27,7 +27,7 @@ Chi phí hạ tầng hàng tháng ước tính $16 - $50 USD, tổng cộng kho�
 ### 3. Kiến trúc giải pháp  
 Nền tảng áp dụng kiến trúc AWS Serverless để quản lý dữ liệu lịch trình và sự kiện cá nhân, có khả năng dễ dàng mở rộng từ một người dùng lên hàng triệu người dùng cá nhân. Các yêu cầu API được tiếp nhận qua Amazon API Gateway và xử lý bởi AWS Lambda, trong khi dữ liệu được lưu trữ trong Amazon DynamoDB để đảm bảo tốc độ truy vấn nhanh chóng, độ trễ thấp. Amazon EventBridge xử lý logic nhắc nhở theo lịch, kích hoạt Lambda và gửi thông báo. AWS Amplify cung cấp giao diện web/di động trực quan, được bảo mật bởi Amazon Cognito để quản lý quyền truy cập an toàn cho từng người dùng.    
 
-![Aurora Time Platform Architecture](images/2-Proposal/platform_architecture.jpeg)
+![Aurora Time Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
 
 #### *Dịch vụ AWS sử dụng*  
 - *AWS Lambda*: Xử lý logic nghiệp vụ cho các thao tác CRUD sự kiện và kích hoạt các tác vụ nhắc nhở theo lịch.  
