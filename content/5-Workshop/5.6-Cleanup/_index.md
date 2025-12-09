@@ -1,32 +1,26 @@
 ---
-title : "Clean up"
-date : "2025-09-09T19:53:52+07:00"
-weight : 6
-chapter : false
-pre : " <b> 5.6. </b> "
+title: "Clean Up Resources"
+date: "2025-09-09T19:53:52+07:00"
+weight: 6
+chapter: false
+pre: " <b> 5.6. </b> "
 ---
-Congratulations on completing this workshop! 
-In this workshop, you learned architecture patterns for accessing Amazon S3 without using the Public Internet. 
-+ By creating a gateway endpoint, you enabled direct communication between EC2 resources and Amazon S3, without traversing an Internet Gateway. 
-+ By creating an interface endpoint you extended S3 connectivity to resources running in your on-premises data center via AWS Site-to-Site VPN or Direct Connect. 
 
-#### clean up
-1. Navigate to Hosted Zones on the left side of Route 53 console. Click the name of *s3.us-east-1.amazonaws.com* zone. Click Delete and confirm deletion by typing delete. 
+#### Clean Up Resources
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
+**First — congratulations on completing this lab!**
+Now let's clean up the resources you created.
 
-2. Disassociate the Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
+1. Delete the S3 bucket
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/vpc.png)
+<div style="text-align: center;">
+  <img src="/images/5-Workshop/5.5-Cleanup/deleteS3.png" alt="Delete S3" style="width:100%" />
+</div>
 
-4. Open the CloudFormation console  and delete the two CloudFormation Stacks that you created for this lab:
-+ PLOnpremSetup
-+ PLCloudSetup
+2. Disable / Delete the CloudFront distribution
 
-![delete stack](/images/5-Workshop/5.6-Cleanup/delete-stack.png)
+<div style="text-align: center;">
+  <img src="/images/5-Workshop/5.5-Cleanup/DisableCoudFront.png" alt="Disable CloudFront" style="width:100%" />
+</div>
 
-5. Delete S3 buckets
-+ Open S3 console
-+ Choose the bucket we created for the lab, click and confirm empty. Click delete and confirm delete.
-
-![delete s3](/images/5-Workshop/5.6-Cleanup/delete-s3.png)
+After disabling the distribution, AWS will allow you to delete the CloudFront distribution.

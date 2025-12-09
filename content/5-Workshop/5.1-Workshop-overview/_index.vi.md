@@ -6,14 +6,28 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+## Tổng quan về Workshop
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+Trong workshop này, bạn sẽ xây dựng một **website portfolio cá nhân** hoàn chỉnh với kiến trúc **serverless** trên AWS, không cần quản lý server hay lo lắng về scaling.
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+### Kiến trúc Workshop
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+Workshop sử dụng **2 dịch vụ AWS chính**:
+
++ **Amazon S3 (Simple Storage Service)** - Đóng vai trò là web server lưu trữ các file tĩnh (HTML, CSS, images). S3 Static Website Hosting cho phép bạn host website với chi phí cực thấp và khả năng lưu trữ không giới hạn.
+
++ **Amazon CloudFront** - Dịch vụ CDN (Content Delivery Network - Mạng phân phối nội dung) giúp website của bạn tải nhanh hơn. Khi người dùng truy cập, họ sẽ nhận nội dung từ server gần nhất thay vì phải đi từ Singapore (nơi đặt S3). CloudFront cũng cung cấp **HTTPS miễn phí**.
+
+<div style="text-align: center;">
+  <img src="/images/5-Workshop/5.1-Workshop-overview/Architect-Workshop.png" alt="Kiến trúc Workshop" style="width:100%" />
+</div>
+
+### Lợi ích của kiến trúc này
+
+**Về hiệu năng:** Website được phục vụ từ edge location gần người dùng nhất giúp giảm độ trễ.
+
+**Về chi phí:** Với Free Tier, bạn có 12 tháng miễn phí với 5GB S3 storage, 1TB CloudFront transfer và 10 triệu requests. Sau Free Tier, chi phí chỉ ~$0.60/tháng cho website traffic trung bình.
+
+**Về vận hành:** Không cần quản lý server, không cần lo về patching, scaling tự động, uptime 99.99% được AWS đảm bảo. Bạn chỉ cần tập trung vào nội dung website.
+
+**Về bảo mật:** HTTPS được bật mặc định, S3 bucket policy kiểm soát access, CloudFront có AWS Shield Standard tích hợp sẵn để chống DDoS attacks cơ bản.
