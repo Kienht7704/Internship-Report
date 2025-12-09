@@ -7,19 +7,22 @@ pre: " <b> 4. </b> "
 ---
 
 
-This section lists the events you have participated in during your internship. For example:
+This section lists the events you have participated in during your internship.
 
-### [4.1. AWS Cloud Day Vietnam - AI Edition 2025](4.1-Event1/)
-**Date:** September 18, 2025  
+### [4.1. AWS Cloud Mastery Series #1](4.1-Event1/)
+**Date:** October 15, 2025  
 **Location:** 2 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City
 
-A pivotal gathering for Vietnam's tech and business communities, focused on accelerating digital transformation through the convergence of Cloud Computing and Artificial Intelligence.
+An in-depth workshop focused on the comprehensive landscape of AI/ML in Vietnam and hands-on practice with AWS core services for Machine Learning and Generative AI. The event provided deep knowledge about Amazon SageMaker, Bedrock, RAG Architecture, and Guardrails for securing GenAI applications.
 
-### [4.2. Discover Agentic AI – Amazon QuickSuite Workshop](4.2-Event2/)
-**Date:** November 7, 2025  
+### [4.2. AWS Cloud Mastery Series #2](4.2-Event2/)
+**Date:** November 17, 2025  
 **Location:** AWS Vietnam Office, Bitexco Financial Tower, HCMC
 
-An exclusive workshop focused on the shift from passive Generative AI to autonomous Agentic AI. The event featured the first live demonstration of Amazon QuickSuite in Vietnam and introduced the AWS LIFT Program to lower financial barriers for adoption.
+A full-day in-depth workshop on DevOps culture and tools on the AWS platform. The event covered the entire software development lifecycle from CI/CD automation, containerization (ECS, EKS, App Runner), to observability with AWS X-Ray, helping teams optimize performance through DORA metrics.
 
-### [4.3. AWS Cloud Mastery Series #3 - Security Pillar Deep Dive](4.3-Event3/)
-*Add your event details here*
+### [4.3. AWS Cloud Mastery Series #3 - Deep Dive into AI-Driven Development](4.3-Event3/)
+**Date:** December 1, 2025  
+**Location:** Bitexco Financial Tower, 2 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City
+
+A sharing session focused on the shift in software development processes in the AI era (AI-Driven Development Life Cycle). The event introduced Amazon Q Developer (Speaker: Toan Huynh) and the Kiro tool (Speaker: My Nguyen), two advanced programming assistant tools to optimize technical team performance.

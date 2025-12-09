@@ -1,14 +1,14 @@
 ---
-title: "Khám Phá Agentic AI – Workshop Amazon QuickSuite"
-date: 2025-11-07
+title: "AWS Cloud Mastery Series #2"
+date: 2025-11-17
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-### Khám Phá Agentic AI – Workshop Amazon QuickSuite
+### AWS Cloud Mastery Series #2
 
-**- Ngày:** 7 tháng 11, 2025
+**- Ngày:** 17 tháng 11, 2025
 **- Địa điểm:** Văn phòng AWS Việt Nam, Bitexco Financial Tower, TP.HCM
 
 
@@ -16,32 +16,53 @@ pre: " <b> 4.2. </b> "
 
 #### Tổng quan sự kiện
 
-Một workshop đặc biệt tập trung vào sự chuyển dịch từ AI Tạo sinh (Generative AI) thụ động sang AI Tác tử (Agentic AI) tự chủ. Sự kiện đã có buổi trình diễn trực tiếp đầu tiên của Amazon QuickSuite tại Việt Nam và giới thiệu Chương trình AWS LIFT để giảm bớt rào cản tài chính cho việc áp dụng.
+Hội thảo chuyên sâu cả ngày về văn hóa và công cụ DevOps trên nền tảng AWS, bao trùm toàn bộ vòng đời phát triển phần mềm từ tư duy quản trị đến vận hành hạ tầng và giám sát hệ thống.
 
 **Mục tiêu chính:**
-*   **Định nghĩa Agentic AI:** Làm rõ khái niệm về các tác tử AI tự chủ có khả năng suy luận và thực thi nhiệm vụ.
-*   **Giới thiệu Amazon QuickSuite:** Trình diễn nền tảng hợp nhất giữa trực quan hóa dữ liệu (QuickSight) và AI tạo sinh (Quick Suite Q).
-*   **Hỗ trợ học tập thực hành:** Cung cấp một môi trường thực tế để xây dựng các khái niệm AI với sự hướng dẫn của chuyên gia.
-*   **Thúc đẩy áp dụng:** Cung cấp khoản tín dụng 80.000 USD thông qua Chương trình AWS LIFT để thúc đẩy R&D.
+- **Định hình Tư duy DevOps:** Hiểu rõ văn hóa DevOps và các chỉ số đo lường hiệu quả then chốt (DORA metrics, MTTR).
+
+- **Tự động hóa Quy trình (CI/CD):** Thiết lập đường ống tích hợp và triển khai liên tục sử dụng bộ công cụ AWS Code Series.
+
+- **Hiện đại hóa với Container:** Nắm vững chiến lược triển khai Microservices trên Amazon ECS, EKS và App Runner.
+
+- **Giám sát toàn diện:** Thiết lập khả năng quan sát (Observability) full-stack để phát hiện và xử lý sự cố tức thời.
 
 ---
 
 #### Bài học và Erkenntnisse chính
 
-*   **Tập trung vào tính tự chủ:** Mục tiêu thiết kế của Agentic AI là xây dựng các hệ thống hành động thay mặt người dùng, không chỉ cung cấp thông tin.
-*   **Cách tiếp cận hệ sinh thái là rất quan trọng:** Các tác tử hiệu quả đòi hỏi một mạng lưới công cụ được kết nối, giống như mạng lưới được cung cấp bởi QuickSuite, để liên kết các nguồn dữ liệu với logic hành động.
-*   **Việc áp dụng sớm tạo ra lợi thế:** Việc thành thạo các công cụ như QuickSuite trước khi chúng trở nên phổ biến sẽ mang lại một lợi thế cạnh tranh đáng kể.
-*   **Nguồn vốn thúc đẩy sự đổi mới:** Các ưu đãi tài chính như chương trình LIFT cho phép các công ty thử nghiệm và đổi mới nhanh hơn.
+- **Tự động hóa là xương sống:** Một quy trình CI/CD mạnh mẽ không chỉ là build code mà còn phải bao gồm các chiến lược triển khai an toàn như Blue/Green hoặc Canary để giảm thiểu rủi ro downtime.
+
+- **IaC ngăn chặn "Drift":** Việc sử dụng CloudFormation hoặc CDK giúp đảm bảo môi trường nhất quán, tránh hiện tượng "cấu hình trôi dạt" (configuration drift) thường gặp khi thao tác thủ công.
+
+- **Lựa chọn công cụ Container phù hợp:** Không có giải pháp duy nhất; ECS phù hợp cho sự tích hợp sâu với AWS, trong khi EKS dành cho chuẩn Kubernetes mở rộng, và App Runner dành cho sự đơn giản hóa tối đa.
+
+- **Observability > Monitoring:** Giám sát (Monitoring) chỉ cho biết hệ thống đang hỏng, trong khi Khả năng quan sát (Observability - với AWS X-Ray) giúp trả lời câu hỏi tại sao và ở đâu hệ thống bị lỗi trong kiến trúc phân tán.
 
 ---
 
 #### Ứng dụng vào Công việc
 
-1.  **Khám phá QuickSuite cho Phân tích:** Nghiên cứu việc tích hợp QuickSight và Quick Suite Q để tạo ra các "Tác tử Phân tích" có thể tự động hóa việc báo cáo và phân tích dữ liệu.
-2.  **Đảm bảo kinh phí cho R&D:** Đăng ký Chương trình AWS LIFT để đảm bảo các khoản tín dụng cho các dự án nghiên cứu và phát triển liên quan đến AI sắp tới.
-3.  **Xác định các trường hợp sử dụng tự động hóa:** Kiểm tra các hoạt động nội bộ để tìm các tác vụ lặp đi lặp lại, nhiều bước phù hợp để một tác tử AI thực hiện tự chủ.
-4.  **Hợp tác với các đối tác triển khai:** Hợp tác với các đối tác như Cloud Kinetics để thiết kế và triển khai kiến trúc phức tạp, giảm thiểu rủi ro phát triển nội bộ.
+- **Đo lường hiệu suất team:** Áp dụng ngay bộ chỉ số **DORA** (Deployment Frequency, Lead Time for Changes...) để đánh giá hiện trạng quy trình phát triển của team.
+
+- **Nâng cấp Pipeline:** Rà soát lại pipeline hiện tại, tích hợp thêm AWS CodeDeploy để thực hiện chiến lược **Blue/Green Deployment** cho các dịch vụ quan trọng.
+
+- **Chuyển đổi sang CDK:** Bắt đầu thử nghiệm chuyển đổi một module hạ tầng nhỏ từ CloudFormation thuần (YAML/JSON) sang AWS CDK để tận dụng khả năng tái sử dụng code (Constructs).
+
+- *Tối ưu giám sát:** Tích hợp **AWS X-Ray** vào các ứng dụng Microservices hiện có để có được bản đồ truy vết (trace map) chi tiết, giúp giảm thời gian điều tra lỗi (MTTR).
 
 ---
-#### Hình ảnh sự kiện
-*Thêm hình ảnh sự kiện của bạn tại đây*
+#### Ảnh sự kiện
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event2.jpeg"  style="width:100%" />
+</div><div style="text-align: center;">
+  <img src="/images/4-Event/Event2.1jpeg.jpeg"  style="width:100%" />
+</div><div style="text-align: center;">
+  <img src="/images/4-Event/Event2.2jpeg.jpeg"  style="width:100%" />
+</div><div style="text-align: center;">
+  <img src="/images/4-Event/Event2.3jpeg.jpeg"  style="width:100%" />
+</div><div style="text-align: center;">
+  <img src="/images/4-Event/Event2.4jpeg.jpeg"  style="width:100%" />
+</div><div style="text-align: center;">
+  <img src="/images/4-Event/Event2.5jpeg.jpeg"  style="width:100%" />
+</div>

@@ -1,41 +1,64 @@
 ---
-title: "AWS Cloud Mastery Series #3 - Security Pillar Deep Dive"
+title: "AWS Cloud Mastery Series #3 - Deep Dive into AI-Driven Development"
 date: 2025-12-01
 weight: 3
 chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-### AWS Cloud Mastery Series #3 - Security Pillar Deep Dive
+### AWS Cloud Mastery Series #3 - Deep Dive into AI-Driven Development
 
 **- Date:** December 1, 2025
-**- Location:** AWS Vietnam Office, Bitexco Financial Tower, HCMC
+**- Location:** Bitexco Financial Tower, 2 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City
 
 
 ---
 
 #### Event Overview
 
-An in-depth workshop focused on the Security Pillar of the AWS Well-Architected Framework. The event provided knowledge and best practices for securing cloud workloads.
+A sharing session focused on the shift in software development processes in the AI era (AI-Driven Development), introducing advanced programming assistant tools to optimize technical team performance.
 
 **Key Objectives:**
-*   **Deep Dive into the Security Pillar:** Analyze the design principles and key areas of security on AWS.
-*   **Identity and Access Management:** Gain a deep understanding of AWS IAM, MFA, and best practices for access control.
-*   **Data Protection:** Explore techniques for encrypting data at-rest and in-transit.
-*   **Automation and Monitoring:** Learn how to use AWS Config, CloudTrail, and Security Hub to monitor and automate security controls.
+- **Approach AIDDLC:** Understand the concept of "AI-Driven Development Life Cycle" - a software development process driven by AI.
+
+- **Experience Amazon Q Developer:** See a live demo of how AWS's AI assistant supports programming and infrastructure problem-solving (Speaker: Toan Huynh).
+
+- **Explore Kiro Tool:** Learn about the features and practical applications of Kiro through an in-depth demo (Speaker: My Nguyen).
 
 ---
 
 #### Key Takeaways & Learnings
 
-*   **Security is a Shared Responsibility:** Understand the shared responsibility model and the customer's role in securing applications in the cloud.
-*   **Defense in Depth:** Apply multiple layers of security to protect resources comprehensively.
-*   **Automation is Key:** Automating security checks and remediation reduces human error and allows for faster responses to threats.
+- **The Rise of AIDDLC:** Software development is no longer just manual coding. AI is now participating in the entire lifecycle from suggesting architecture, writing test cases, to debugging and maintenance.
+
+- **Amazon Q - More Than a Code Generator:** Amazon Q Developer not only generates code but also deeply understands AWS infrastructure context, helping solve operational and security problems directly in the IDE.
+
+- **Optimization with Specialized Tools (Kiro):** Combining different AI tools (like Kiro) into the workflow helps solve specific bottlenecks that general-purpose tools may not fully cover.
 
 ---
 
 #### Application to Work
 
-1.  **Re-evaluate IAM Policies:** Review and strengthen existing IAM policies according to the principle of least privilege.
-2.  **Implement Security Monitoring:** Set up AWS Security Hub for a centralized, comprehensive view of the security posture.
-3.  **Enhance Data Encryption:** Ensure all sensitive data is encrypted using AWS KMS.
+- **Shift Mindset to AIDDLC:** Organize a team meeting to introduce the AI-oriented development model, encouraging the adoption of an AI-first mindset using AI as a primary support tool.
+
+- **Deploy Pilot Amazon Q:** Install and test Amazon Q Developer for a small project or core team to measure productivity improvement (reduced documentation search time, faster bug fixes).
+
+- **Evaluate Kiro's Fit:** Based on the demo, analyze which problems Kiro solves best (Testing, Documentation, or Automation) and determine if it's suitable for integration into the current tech stack.
+
+---
+#### Event Photos
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event3.jpeg"  style="width:70%" />
+</div>
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event3.1.jpeg"  style="width:70%" />
+</div>
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event3.2.jpeg"  style="width:70%" />
+</div>
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event3.3.jpeg"  style="width:70%" />
+</div>
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event3.4.jpeg"  style="width:70%" />
+</div>

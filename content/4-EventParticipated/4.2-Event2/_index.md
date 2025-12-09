@@ -1,14 +1,14 @@
 ---
-title: "Discover Agentic AI – Amazon QuickSuite Workshop"
-date: 2025-11-07
+title: "AWS Cloud Mastery Series #2"
+date: 2025-11-17
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-### Discover Agentic AI – Amazon QuickSuite Workshop
+### AWS Cloud Mastery Series #2
 
-**- Date:** November 7, 2025
+**- Date:** November 17, 2025
 **- Location:** AWS Vietnam Office, Bitexco Financial Tower, HCMC
 
 
@@ -16,32 +16,58 @@ pre: " <b> 4.2. </b> "
 
 #### Event Overview
 
-An exclusive workshop focused on the shift from passive Generative AI to autonomous Agentic AI. The event featured the first live demonstration of Amazon QuickSuite in Vietnam and introduced the AWS LIFT Program to lower financial barriers for adoption.
+A full-day in-depth workshop on DevOps culture and tools on the AWS platform, covering the entire software development lifecycle from management philosophy to infrastructure operations and system monitoring.
 
 **Key Objectives:**
-*   **Define Agentic AI:** Clarify the concept of autonomous AI agents that can reason and execute tasks.
-*   **Introduce Amazon QuickSuite:** Showcase the unified data visualization (QuickSight) and generative AI (Quick Suite Q) platform.
-*   **Enable Hands-on Learning:** Provide a practical environment to build AI concepts with expert guidance.
-*   **Facilitate Adoption:** Offer an $80,000 USD credit through the AWS LIFT Program to accelerate R&D.
+- **Shape DevOps Mindset:** Understand DevOps culture and key performance indicators for efficiency measurement (DORA metrics, MTTR).
+
+- **Automate Processes (CI/CD):** Set up continuous integration and deployment pipelines using the AWS Code Series tools.
+
+- **Modernize with Containers:** Master the strategy for deploying Microservices on Amazon ECS, EKS, and App Runner.
+
+- **Comprehensive Monitoring:** Establish full-stack observability capabilities to detect and resolve issues in real-time.
 
 ---
 
 #### Key Takeaways & Learnings
 
-*   **Focus on Autonomy:** The design goal of Agentic AI is to build systems that act on a user's behalf, not just provide information.
-*   **Ecosystem Approach is Crucial:** Effective agents require a connected network of tools, like the one provided by QuickSuite, to link data sources with action logic.
-*   **Early Adoption Creates Advantage:** Gaining proficiency with tools like QuickSuite before they become mainstream offers a significant competitive edge.
-*   **Funding Accelerates Innovation:** Financial incentives like the LIFT program enable companies to experiment and innovate more quickly.
+- **Automation is the Backbone:** A powerful CI/CD process isn't just about building code—it must include safe deployment strategies like Blue/Green or Canary to minimize downtime risk.
+
+- **IaC Prevents Drift:** Using CloudFormation or CDK ensures consistent environments and avoids "configuration drift" that often occurs with manual operations.
+
+- **Choose the Right Container Tool:** There's no one-size-fits-all solution; ECS is ideal for deep AWS integration, EKS for scalable open Kubernetes standards, and App Runner for maximum simplicity.
+
+- **Observability > Monitoring:** Monitoring only tells you the system is broken; Observability (via AWS X-Ray) answers why and where the failure occurs in distributed architectures.
 
 ---
 
 #### Application to Work
 
-1.  **Explore QuickSuite for Analytics:** Investigate integrating QuickSight and Quick Suite Q to create "Analyst Agents" that can automate data reporting and analysis.
-2.  **Secure R&D Funding:** Apply for the AWS LIFT Program to secure credits for upcoming AI-related research and development projects.
-3.  **Identify Automation Use Cases:** Audit internal operations to find repetitive, multi-step tasks suitable for autonomous execution by an AI agent.
-4.  **Engage with Implementation Partners:** Collaborate with partners like Cloud Kinetics for complex architectural design and implementation, reducing in-house development risks.
+- **Measure Team Performance:** Immediately apply the **DORA metrics** (Deployment Frequency, Lead Time for Changes, etc.) to evaluate the current state of the team's development process.
+
+- **Upgrade Pipeline:** Review the current pipeline and integrate AWS CodeDeploy to implement **Blue/Green Deployment** strategy for critical services.
+
+- **Migrate to CDK:** Start experimenting with converting a small infrastructure module from pure CloudFormation (YAML/JSON) to AWS CDK to leverage code reusability (Constructs).
+
+- **Optimize Monitoring:** Integrate **AWS X-Ray** into existing Microservices applications to obtain detailed trace maps, reducing error investigation time (MTTR).
 
 ---
 #### Event Photos
-*Add your event photos here*
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event2.jpeg"  style="width:100%" />
+</div>
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event2.1jpeg.jpeg"  style="width:100%" />
+</div>
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event2.2jpeg.jpeg"  style="width:100%" />
+</div>
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event2.3jpeg.jpeg"  style="width:100%" />
+</div>
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event2.4jpeg.jpeg"  style="width:100%" />
+</div>
+<div style="text-align: center;">
+  <img src="/images/4-Event/Event2.5jpeg.jpeg"  style="width:100%" />
+</div>

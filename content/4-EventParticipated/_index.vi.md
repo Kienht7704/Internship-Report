@@ -8,19 +8,22 @@ pre: " <b> 4. </b> "
 
 
 
-Phần này liệt kê các sự kiện bạn đã tham gia trong quá trình thực tập. Ví dụ:
+Phần này liệt kê các sự kiện bạn đã tham gia trong quá trình thực tập.
 
-### [4.1. AWS Cloud Day Vietnam - AI Edition 2025](4.1-Event1/)
-**Ngày:** 18 tháng 9, 2025  
+### [4.1. AWS Cloud Mastery Series #1](4.1-Event1/)
+**Ngày:** 15 tháng 10, 2025  
 **Địa điểm:** Số 2 đường Hải Triều, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh
 
-Một sự kiện quan trọng dành cho cộng đồng công nghệ và doanh nghiệp Việt Nam, tập trung vào việc thúc đẩy chuyển đổi số thông qua sự hội tụ của Điện toán đám mây và Trí tuệ nhân tạo.
+Hội thảo chuyên sâu tập trung vào bức tranh toàn cảnh về AI/ML tại Việt Nam và hướng dẫn thực hành các dịch vụ cốt lõi của AWS cho Machine Learning và Generative AI. Sự kiện cung cấp kiến thức sâu về Amazon SageMaker, Bedrock, RAG Architecture, và Guardrails để bảo mật GenAI.
 
-### [4.2. Khám Phá Agentic AI – Workshop Amazon QuickSuite](4.2-Event2/)
-**Ngày:** 7 tháng 11, 2025  
+### [4.2. AWS Cloud Mastery Series #2](4.2-Event2/)
+**Ngày:** 17 tháng 11, 2025  
 **Địa điểm:** Văn phòng AWS Việt Nam, Bitexco Financial Tower, TP.HCM
 
-Một workshop đặc biệt tập trung vào sự chuyển dịch từ AI Tạo sinh (Generative AI) thụ động sang AI Tác tử (Agentic AI) tự chủ. Sự kiện đã có buổi trình diễn trực tiếp đầu tiên của Amazon QuickSuite tại Việt Nam và giới thiệu Chương trình AWS LIFT để giảm bớt rào cản tài chính cho việc áp dụng.
+Hội thảo chuyên sâu cả ngày về văn hóa và công cụ DevOps trên nền tảng AWS. Sự kiện bao trùm toàn bộ vòng đời phát triển phần mềm từ CI/CD automation, containerization (ECS, EKS, App Runner), đến observability với AWS X-Ray, giúp team tối ưu hóa hiệu suất thông qua DORA metrics.
 
-### [4.3. AWS Cloud Mastery Series #3 - Security Pillar Deep Dive](4.3-Event3/)
-*Thêm thông tin sự kiện của bạn tại đây*
+### [4.3. AWS Cloud Mastery Series #3 - Deep Dive into AI-Driven Development](4.3-Event3/)
+**Ngày:** 1 tháng 12, 2025  
+**Địa điểm:** Bitexco Financial Tower, 2 Đ. Hải Triều, Bến Nghé, Quận 1, TP. Hồ Chí Minh
+
+Buổi chia sẻ tập trung vào sự chuyển dịch của quy trình phát triển phần mềm trong kỷ nguyên AI (AI-Driven Development Life Cycle). Sự kiện giới thiệu Amazon Q Developer (Speaker: Toan Huynh) và công cụ Kiro (Speaker: My Nguyen), hai công cụ trợ lý lập trình tiên tiến để tối ưu hóa hiệu suất đội ngũ kỹ thuật.

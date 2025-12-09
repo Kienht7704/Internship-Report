@@ -16,26 +16,46 @@ pre: " <b> 4.3. </b> "
 
 #### Tổng quan sự kiện
 
-Một buổi workshop chuyên sâu tập trung vào Trụ cột Bảo mật (Security Pillar) trong Khuôn khổ AWS Well-Architected. Sự kiện cung cấp kiến thức và các phương pháp thực hành tốt nhất để bảo vệ khối lượng công việc trên đám mây.
+Buổi chia sẻ tập trung vào sự chuyển dịch của quy trình phát triển phần mềm trong kỷ nguyên AI (AI-Driven Development), giới thiệu các công cụ trợ lý lập trình tiên tiến để tối ưu hóa hiệu suất đội ngũ kỹ thuật.
 
 **Mục tiêu chính:**
-*   **Hiểu sâu về Trụ cột Bảo mật:** Phân tích các nguyên tắc thiết kế và các lĩnh vực chính của bảo mật trên AWS.
-*   **Quản lý Danh tính và Truy cập:** Tìm hiểu sâu về AWS IAM, MFA và các phương pháp hay nhất để kiểm soát truy cập.
-*   **Bảo vệ Dữ liệu:** Khám phá các kỹ thuật mã hóa dữ liệu khi lưu trữ (at-rest) và khi truyền (in-transit).
-*   **Tự động hóa và Giám sát:** Học cách sử dụng AWS Config, CloudTrail và Security Hub để giám sát và tự động hóa các biện pháp kiểm soát bảo mật.
+- **Tiếp cận AIDDLC:** Hiểu rõ khái niệm "AI-Driven Development Life Cycle" - quy trình phát triển phần mềm được dẫn dắt bởi AI.
+
+- **Trải nghiệm Amazon Q Developer:** Xem demo thực tế về cách trợ lý AI của AWS hỗ trợ lập trình và giải quyết vấn đề hạ tầng (Speaker: Toan Huynh).
+
+- **Khám phá công cụ Kiro**: Tìm hiểu tính năng và ứng dụng thực tế của Kiro qua phần demo chuyên sâu (Speaker: My Nguyen).
 
 ---
 
 #### Bài học và Erkenntnisse chính
 
-*   **Bảo mật là Trách nhiệm chung:** Hiểu rõ mô hình trách nhiệm chung và vai trò của khách hàng trong việc bảo mật ứng dụng trên đám mây.
-*   **Bảo mật theo lớp (Defense in Depth):** Áp dụng nhiều lớp bảo mật để bảo vệ tài nguyên một cách toàn diện.
-*   **Tự động hóa là Chìa khóa:** Tự động hóa các quy trình kiểm tra và khắc phục bảo mật giúp giảm thiểu sai sót của con người và phản ứng nhanh hơn với các mối đe dọa.
+- **Sự trỗi dậy của AIDDLC:** Phát triển phần mềm không còn chỉ là viết mã (coding) thủ công. AI đang tham gia vào toàn bộ vòng đời từ gợi ý kiến trúc, viết test case, đến debug và bảo trì.
+
+
+
+- **Amazon Q - Hơn cả Code Generator**: Amazon Q Developer không chỉ sinh mã mà còn hiểu sâu về ngữ cảnh hạ tầng AWS, giúp giải quyết các bài toán về vận hành và bảo mật ngay trong IDE.
+
+- **Tối ưu hóa bằng công cụ chuyên biệt (Kiro)**: Việc kết hợp các công cụ AI khác nhau (như Kiro) vào quy trình giúp giải quyết các điểm nghẽn cụ thể mà các công cụ tổng quát có thể chưa bao phủ hết.
 
 ---
 
 #### Ứng dụng vào Công việc
 
-1.  **Đánh giá lại Chính sách IAM:** Rà soát và củng cố các chính sách IAM hiện tại theo nguyên tắc đặc quyền tối thiểu (least privilege).
-2.  **Triển khai Giám sát Bảo mật:** Thiết lập AWS Security Hub để có một cái nhìn tổng quan, tập trung về tình hình bảo mật.
-3.  **Tăng cường Mã hóa Dữ liệu:** Đảm bảo tất cả dữ liệu nhạy cảm được mã hóa bằng AWS KMS.
+- **Chuyển đổi tư duy sang AIDDLC:** Tổ chức buổi họp team để giới thiệu về mô hình phát triển định hướng AI, khuyến khích tư duy sử dụng AI làm công cụ hỗ trợ chính (AI-first mindset).
+
+- **Triển khai Pilot Amazon Q:** Cài đặt và dùng thử Amazon Q Developer cho một dự án nhỏ hoặc một nhóm nòng cốt để đo lường mức độ cải thiện năng suất (giảm thời gian search docs, fix bug).
+
+- **Đánh giá sự phù hợp của Kiro:** Dựa trên phần demo, phân tích xem Kiro giải quyết bài toán nào tốt nhất (Testing, Documentation hay Automation) và có phù hợp để tích hợp vào tech stack hiện tại hay không.
+
+#### Ảnh sự kiện
+</div><div style="text-align: center;">
+  <img src="/images/4-Event/Event3.jpeg"  style="width:70%" />
+</div></div><div style="text-align: center;">
+  <img src="/images/4-Event/Event3.1.jpeg"  style="width:70%" />
+</div></div><div style="text-align: center;">
+  <img src="/images/4-Event/Event3.2.jpeg"  style="width:70%" />
+</div></div><div style="text-align: center;">
+  <img src="/images/4-Event/Event3.3.jpeg"  style="width:70%" />
+</div></div><div style="text-align: center;">
+  <img src="/images/4-Event/Event3.4.jpeg"  style="width:70%" />
+</div>
