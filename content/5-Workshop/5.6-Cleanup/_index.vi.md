@@ -14,13 +14,13 @@ Hãy dọn dẹp tài nguyên nhé
 1. Xoá S3
 
 <div style="text-align: center;">
-  <img src="/static/images/5-Workshop/5.5-Cleanup/deleteS3.png" alt="DeleteS3" style="width:100%" />
+  <img src="/images/5-Workshop/5.5-Cleanup/deleteS3.png" alt="DeleteS3" style="width:100%" />
 </div> 
 
 2. Vô hiệu hoá/ xoá Distribution của CloudFront
 
 <div style="text-align: center;">
-  <img src="/static/images/5-Workshop/5.5-Cleanup/DisableCoudFront.png" alt="DisableCloudFront" style="width:100%" />
+  <img src="/images/5-Workshop/5.5-Cleanup/DisableCoudFront.png" alt="DisableCloudFront" style="width:100%" />
 </div> 
 
 Sau khi vô hiệu hoá thì AWS sẽ cho các bạn xoá Distribution.
