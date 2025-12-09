@@ -5,48 +5,41 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
-
-### Week 3 Objectives:
-
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| MON | - | 09/08/2025 | 09/08/2025 | <> |
-| TUE | - | 09/09/2025 | 09/09/2025 | <> |
-| WED | - | 09/10/2025 | 09/10/2025 | <> |
-| THU | - | 09/11/2025 | 09/11/2025 | <> |
-| FRI | - | 09/12/2025 | 09/12/2025 | <> |
-| SAT | - | 09/13/2025 | 09/13/2025 | <> |
-| SUN | - | 09/14/2025 | 09/14/2025 | <> |
+| Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Learn about AWS CloudWatch service | 22/09/2025 | 22/09/2025 | <https://000008.awsstudygroup.com/vi/> |
+| 3   | - Learn about Route 53 | 23/09/2025 | 23/09/2025 | <https://000010.awsstudygroup.com/vi/> |
+| 4   | - Get familiar with AWS CLI | 24/09/2025 | 24/09/2025 | <https://000011.awsstudygroup.com/vi/> |
+| 5   | - Watch Module 3 on YouTube AWS Study Group | 25/08/2025 | 25/08/2025 | <https://www.youtube.com/@AWSStudyGroup> |
+| 6   | - Review and consolidate theory of AWS CloudWatch, Route 53, and Module 3 concepts  | 26/08/2025 | 26/08/2025 | <> |
 
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### Monitoring and Management
+- Learned about AWS CloudWatch service:
+    - Monitor resources and applications on AWS.
+    - Collect and track metrics.
 
-* Successfully created and configured an AWS Free Tier account.
+#### Domain Name System (DNS)
+- Researched Amazon Route 53:
+    - Understand traffic routing mechanisms.
+    - Manage domain names and DNS records.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+#### Management Tools
+- Became familiar with AWS CLI (Command Line Interface):
+    - Install and configure the environment.
+    - Interact with AWS services via command line instead of Console.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
+#### Review and Knowledge Consolidation
+- Completed Module 3 learning content (according to AWS Study Group curriculum).
+- Systematized all theory learned during the week:
+    - AWS CloudWatch
+    - Route 53
+    - Key concepts from Module 3.
 
   * Check account & configuration information
   * Retrieve the list of regions
