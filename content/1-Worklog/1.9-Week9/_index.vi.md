@@ -22,10 +22,6 @@ pre: " <b> 1.9. </b> "
 - Xem và nắm vững lý thuyết qua video Module 06-01 - Database Concepts review:
     - Các khái niệm cốt lõi: RDBMS vs NoSQL, OLTP vs OLAP.
     - Hiểu về Data Warehouse, Indexing, Partitioning và các chiến lược tối ưu hóa truy vấn.
-#### Phân tích và Thiết kế hệ thống (Project Analysis)
-    - Phân tích dự án: Đánh giá yêu cầu và xác định khối lượng công việc (workload).
-    
-    - Kiến trúc AWS: Thiết kế sơ đồ kiến trúc hạ tầng đám mây phù hợp cho dự án.
 #### Tài liệu và Giao diện (Documentation & Design)
 - Viết Proposal: Hoàn thiện tài liệu đề xuất dự án để trình bày ý tưởng và giải pháp.
 - Thiết kế UI: Sử dụng Figma để dựng giao diện người dùng (User Interface) cho ứng dụng.
