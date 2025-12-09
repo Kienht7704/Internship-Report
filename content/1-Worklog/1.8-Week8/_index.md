@@ -20,4 +20,4 @@ pre: " <b> 1.8. </b> "
 ### Week 8 Achievements:
 
 #### Exam Preparation
-- Reviewed AWS fundamentals and concepts in preparation for the certification exam.
+- Reviewed AWS fundamentals and concepts in preparation for the exam.

@@ -18,5 +18,27 @@ pre: " <b> 1.7. </b> "
 
 ### Week 7 Achievements:
 
-- Continued in-depth hands-on practice with AWS Study Group videos and labs across multiple AWS services and configurations.
+#### Automation & Monitoring
+- Completed hands-on Lab 22:
+    - Integrated Incoming Webhooks Slack for notifications.
+    - Managed Tags for Instances.
+    - Created IAM Role for AWS Lambda.
+    - Wrote Function to automatically Stop/Start Instance to optimize costs.
+    - Verified results and cleaned up resources.
 
+#### Efficient Resource Management
+- Performed hands-on Lab 27 on Tagging Strategy:
+    - Created EC2 Instance with Tags.
+    - Managed Tags for AWS resources.
+    - Used Filter to search resources by tag.
+    - Used AWS CLI to manipulate Tags.
+    - Created Resource Group to group related resources.
+
+#### Identity & Access Management (IAM Deep Dive)
+- Continued with hands-on Lab 28:
+    - Created IAM User and custom IAM Policy.
+    - Initialized IAM Role and verified security policies (Policy Check) to ensure correct permission delegation.
+
+#### Review & Exam Preparation
+- Spent early and late week reviewing all learned knowledge.
+- Prepared for competency assessment exam.

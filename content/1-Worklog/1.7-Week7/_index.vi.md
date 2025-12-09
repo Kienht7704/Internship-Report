@@ -19,33 +19,26 @@ pre: " <b> 1.7. </b> "
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+#### Tự động hóa và Giám sát (Automation & Monitoring)
+- Hoàn thành bài thực hành Lab 22:
+  - Tích hợp Incoming Webhooks Slack để nhận thông báo.
+  - Quản lý Tags cho Instance.
+  - Tạo IAM Role cho AWS Lambda.
+  - Viết Function để tự động Stop/Start Instance nhằm tối ưu chi phí.
+  - Kiểm tra kết quả và dọn dẹp tài nguyên.
+#### Quản lý tài nguyên hiệu quả (Resource Management)
+- Thực hiện bài thực hành Lab 27 về quản lý thẻ (Tagging Strategy):
+  - Tạo EC2 Instance kèm Tags.
+  - Quản lý Tags cho các tài nguyên AWS.
+  - Sử dụng Filter để lọc tài nguyên theo tag.
+  - Sử dụng AWS CLI để thao tác với Tags.
+  - Tạo Resource Group để nhóm các tài nguyên liên quan.
+#### Quản lý định danh và quyền truy cập (IAM Deep Dive)
+- Tiếp tục với bài thực hành Lab 28:
+  - Tạo IAM User và IAM Policy tùy chỉnh.
+  - Khởi tạo IAM Role và kiểm tra chính sách bảo mật (Policy Check) để đảm bảo quyền hạn được cấp phát chính xác.
+#### Ôn tập và Thi cử
+- Dành thời gian đầu tuần và cuối tuần để ôn tập lại toàn bộ kiến thức đã học.
+- Chuẩn bị cho kỳ thi kiểm tra năng lực.
 
 
