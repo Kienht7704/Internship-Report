@@ -41,5 +41,4 @@ pre: " <b> 1. </b> "
 
 **Tuần 11:** [Cognito Login, Proposal Rewrite, Project Testing, Code Review](1.11-week11/)
 
-
 **Tuần 12:** [Workshop Preparation, End-to-end Testing, Presentation Slides](1.12-week12/)
