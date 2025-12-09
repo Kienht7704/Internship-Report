@@ -12,7 +12,7 @@ pre: " <b> 1.12 </b> "
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | 2   | - Chuẩn bị nội dung cho workshop <br>&emsp; - Hoàn thiện Proposal lần cuối| 24/11/2025 | 24/11/2025 |  |
 | 3   | - Test frontend → Amplify API → Lambda → Resend <br>&emsp; + Đăng nhập Cognito thành công <br>&emsp; + Gửi email OTP/notification từ frontend | 25/11/2025 | 25/11/2025 |  |
-| 4   | - Làm slide thuyết trình <br>&emsp; - Kiểm tra, tối ưu nội dung cho buổi thuyết trình <br>&emsp Chuẩn hoá những hình ảnh cho buổi thuyết trình | 26/11/2025 | 26/11/2025 | <> |
+| 4   | - Làm slide thuyết trình <br>&emsp; - Kiểm tra, tối ưu nội dung cho buổi thuyết trình <br>&emsp Chuẩn hoá những hình ảnh cho buổi thuyết trình | 26/11/2025 | 26/11/2025 |  |
 | 5   | - Test tất cả kịch bản có thể xảy ra cho dự án| 27/11/2025 | 27/11/2025 |  |
 | 6   | - Tổng kiểm tra lại tất cả các tài liệu và slide <br>&emsp + Quy demo và kiểm tra demo vận hành ổn| 28/11/2025 | 28/11/2025 |  |
 
