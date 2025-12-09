@@ -7,38 +7,22 @@ pre: " <b> 4. </b> "
 ---
 
 {{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
+This section lists the events you have participated in during your internship. For example:
 
-During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
+### [4.1. AWS Cloud Day Vietnam - AI Edition 2025](4.1-Event1/)
+**Date:** September 18, 2025  
+**Location:** 2 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City
 
-### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+A pivotal gathering for Vietnam's tech and business communities, focused on accelerating digital transformation through the convergence of Cloud Computing and Artificial Intelligence.
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+### [4.2. Discover Agentic AI – Amazon QuickSuite Workshop](4.2-Event2/)
+**Date:** November 7, 2025  
+**Location:** AWS Vietnam Office, Bitexco Financial Tower, HCMC
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+An exclusive workshop focused on the shift from passive Generative AI to autonomous Agentic AI. The event featured the first live demonstration of Amazon QuickSuite in Vietnam and introduced the AWS LIFT Program to lower financial barriers for adoption.
 
-&emsp;**Role:** Attendee  
-
----
-
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
-
-&emsp;**Date & Time:** 09:00, August 13, 2025  
-
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
-
-&emsp;**Role:** Attendee  
+### [4.3. AWS Cloud Mastery Series #3 - Security Pillar Deep Dive](4.3-Event3/)
+*Add your event details here*

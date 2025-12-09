@@ -9,7 +9,7 @@ pre: " <b> 2. </b> "
 # Aurora Time  
 ## Unified AWS Serverless Solution for Personal Time Management
 
-### 1. Executive Summary  67890
+### 1. Executive Summary
 This proposal presents the implementation plan for Aurora Time, a time management application on the AWS platform, simple and focused on scheduling features, to address the complexity and operational costs of current solutions. Aurora Time will leverage AWS serverless and managed services to ensure high scalability, reliability, and cost optimization, delivering rapid return on investment (ROI) through reduced infrastructure management costs.
 
 ### 2. Problem Statement  
@@ -27,7 +27,9 @@ Estimated monthly infrastructure costs of $16 - $50 USD, totaling approximately 
 ### 3. Solution Architecture  
 The platform applies AWS Serverless architecture to manage personal schedule and event data, with the capability to easily scale from a single user to millions of individual users. API requests are received through Amazon API Gateway and processed by AWS Lambda, while data is stored in Amazon DynamoDB to ensure fast query speed and low latency. Amazon EventBridge handles reminder scheduling logic, triggers Lambda, and sends notifications. AWS Amplify provides an intuitive web/mobile interface, secured by Amazon Cognito to safely manage access permissions for each user.    
 
-![Aurora Time Platform Architecture](/images/2-proposal/platform_architecture.jpeg)
+<div style="text-align: center;">
+  <img src="/images/2-Proposal/Architect.jpg" style="width: 100%;" />
+</div>
 
 #### *AWS Services Used*  
 - *AWS Lambda*: Processes business logic for event CRUD operations and triggers scheduled reminder tasks.  

@@ -1,126 +1,47 @@
 ---
-title: "Event 2"
-date: "2025-09-09T19:53:52+07:00"
-weight: 1
+title: "Discover Agentic AI – Amazon QuickSuite Workshop"
+date: 2025-11-07
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+### Discover Agentic AI – Amazon QuickSuite Workshop
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+**- Date:** November 7, 2025
+**- Location:** AWS Vietnam Office, Bitexco Financial Tower, HCMC
 
-### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+---
 
-### Speakers
+#### Event Overview
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+An exclusive workshop focused on the shift from passive Generative AI to autonomous Agentic AI. The event featured the first live demonstration of Amazon QuickSuite in Vietnam and introduced the AWS LIFT Program to lower financial barriers for adoption.
 
-### Key Highlights
+**Key Objectives:**
+*   **Define Agentic AI:** Clarify the concept of autonomous AI agents that can reason and execute tasks.
+*   **Introduce Amazon QuickSuite:** Showcase the unified data visualization (QuickSight) and generative AI (Quick Suite Q) platform.
+*   **Enable Hands-on Learning:** Provide a practical environment to build AI concepts with expert guidance.
+*   **Facilitate Adoption:** Offer an $80,000 USD credit through the AWS LIFT Program to accelerate R&D.
 
-#### Identifying the drawbacks of legacy application architecture
+---
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+#### Key Takeaways & Learnings
 
-#### Transitioning to modern application architecture – Microservices
+*   **Focus on Autonomy:** The design goal of Agentic AI is to build systems that act on a user's behalf, not just provide information.
+*   **Ecosystem Approach is Crucial:** Effective agents require a connected network of tools, like the one provided by QuickSuite, to link data sources with action logic.
+*   **Early Adoption Creates Advantage:** Gaining proficiency with tools like QuickSuite before they become mainstream offers a significant competitive edge.
+*   **Funding Accelerates Innovation:** Financial incentives like the LIFT program enable companies to experiment and innovate more quickly.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+---
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Application to Work
 
-#### Domain-Driven Design (DDD)
+1.  **Explore QuickSuite for Analytics:** Investigate integrating QuickSight and Quick Suite Q to create "Analyst Agents" that can automate data reporting and analysis.
+2.  **Secure R&D Funding:** Apply for the AWS LIFT Program to secure credits for upcoming AI-related research and development projects.
+3.  **Identify Automation Use Cases:** Audit internal operations to find repetitive, multi-step tasks suitable for autonomous execution by an AI agent.
+4.  **Engage with Implementation Partners:** Collaborate with partners like Cloud Kinetics for complex architectural design and implementation, reducing in-house development risks.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
-
-### Key Takeaways
-
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+---
+#### Event Photos
+*Add your event photos here*

@@ -5,122 +5,118 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+# AWS Powers Breakthrough Gaming Experiences at devcom and gamescom 2025
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+- Author: Jeff Harris and David Holladay
+- Published: August 13, 2025
+- Source: https://aws.amazon.com/blogs/gametech/aws-powers-breakthrough-gaming-experiences-at-devcom-and-gamescom-2025/
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+Amazon Web Services (AWS) will be coming to Cologne, Germany this month to participate in two major gaming industry events: the [devcom Developer Conference](https://www.devcom.global/ddc-2025/) and [gamescom](https://www.gamescom.global/en), running August 17-19 and August 20-24 respectively at [Koelnmesse](https://koelncongress.de/en/locations/koelnmesse/). The AWS for Games team will share advances that help developers build, operate, and grow their games while connecting with fans and industry experts from around the world.
 
----
+AWS will launch the week of events with the **Celebrating Women in Games reception and networking event** on Monday, August 18 at 6:00 PM at KölnSKY, in partnership with Amazon Games, EPAM Systems, and Women in Games International (WIGI). Marking WIGI's 20th anniversary, the event will celebrate and recognize achievements in diversity and inclusion. Be sure to [register today](https://womeningamesdevcom2025.splashthat.com/) to make sure you don't miss a panel discussion with successful female leaders—a key part of the program.
 
-## Architecture Guidance
-
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
-
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
-
-**The solution architecture is now as follows:**
-
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+Beyond that, [AWS has prepared a robust slate of activities](https://aws.amazon.com/gametech/events/devcom2025/) for devcom and gamescom attendees to learn, connect, and get inspired.
 
 ---
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+## AWS Recognized as Leading Cloud Platform for Gaming
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+The newly released [2025 Omdia Market Radar](https://pages.awscloud.com/rs/112-TZM-766/images/25-GLOBAL-en-US-omdia-other-ardm-market-radar-for-cloud-platforms-for-games-reprint.pdf?trk=561afd44-4844-464f-9ac9-550a9d4c391b&sc_channel=el) has positioned AWS as the [leading cloud platform provider for gaming](https://pages.awscloud.com/GLOBAL-brand-awareness-content-download-25-omdia-ardm-market-radar-for-cloud-platforms-for-games-report-learn.html?trk=752d0ce9-e6b0-48ed-96fe-fb140821314a&sc_channel=el). The report evaluates major cloud providers serving the gaming industry, analyzing their capabilities across game development, operations, and emerging technologies. According to Omdia's analysis, AWS leads the cloud services market for gaming, particularly outside China. AWS has held this top position for three consecutive years, with standout differentiators such as advanced game development tools, proven scalability, and continuous innovation, especially in AI.
 
----
+<div style="text-align: center;">
+  <img src="/images/3-BlogsTranslated/Blog1.png" style="width: 100%;" />
+</div>
 
-## Technology Choices and Communication Scope
+> Figure 1: Omdia's heat map of cloud platforms for gaming
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+## What You Can Expect & Where to Meet AWS for Games
 
 ---
 
-## The Pub/Sub Hub
+During devcom, attendees can meet with AWS for Games industry experts and partners, explore new solutions and updates at the exhibit area (booth A1) throughout opening hours, and attend several customer-led panel discussions. Some highlights include:
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+### Live Demo Experiences:
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+- Containers on Amazon GameLift servers
 
----
+- Game streaming with Amazon GameLift Streams
 
-## Core Microservice
+- Harnessing AI power for QA with partner [Razer Inc](https://partners.amazonaws.com/partners/0010h00001kN7XOAA0/Razer%20INC)
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+- Continuous localization for games, powered by AI with partner [Phrase](https://partners.amazonaws.com/partners/0010L00001u6KmlQAE/Phrase)
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+- Deep understanding of player journeys with [AppsFlyer's](https://partners.amazonaws.com/partners/0010h00001aCdXDAA0/AppsFlyer) devtodev
+
+- AI-integrated gaming solutions with partner [Globant](https://partners.amazonaws.com/partners/001E000000NaBHeIAN/Globant)
 
 ---
 
-## Front Door Microservice
+## Featured Workshop Sessions:
 
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
+During Monday and Tuesday, AWS for Games will host four panel discussions, including:
+
+### Featured Workshop Sessions
+
+#### - [Building Game Streaming Experiences with Amazon GameLift Streams](https://bizcommunity.gamescom.global/event/devcom-developer-conference-2025/planning/UGxhbm5pbmdfMjc0ODE3Mw==)
+
+Monday, 8/18 | 11:45–12:15 | Stage 3, Confex 1 Floor
+
+Discover how to leverage the power of **pixel streaming** with **Amazon GameLift Streams**, from key deployment considerations to security measures and performance optimization.
+This discussion introduces practical approaches for building **cloud gaming solutions** that deliver high-fidelity, immersive gameplay experiences to players on **any device without downloads**.
+Use cases include: direct-to-player game streaming, **efficient internal playtesting**, and **playable ads** to attract new players.
+
+#### - [Monster Hunter Wilds Network Architecture Supports Over 1 Million Concurrent Players](https://bizcommunity.gamescom.global/event/devcom-developer-conference-2025/planning/UGxhbm5pbmdfMjc0ODE4MQ==)
+
+Monday, 8/18 | 13:15–14:25 | Stage 15, Confex 2 Floor
+
+**Monster Hunter Wilds** from **Capcom** is a **cross-platform AAA title** designed to handle **massive player volumes from day one**.
+This panel shares how the development team **architected the game network** to support enormous global player traffic—including insights into **technology choices, challenges faced, and innovative infrastructure solutions** built from the ground up for optimal performance.
+
+#### - [Global Growth Starts Early: Game Localization Workflow for Developers (with Phrase)](https://bizcommunity.gamescom.global/event/devcom-developer-conference-2025/planning/UGxhbm5pbmdfMjc0ODE4NA==)
+
+Tuesday, 8/19 | 11:45–12:15 | Stage 3, Confex 1 Floor
+
+Global players expect **authentic, high-quality experiences in their own language**. However, many studios handle localization **late in development**, leading to **release delays, reduced quality**, and increased rework costs.
+This discussion shows how to **plan localization early, automate processes**, and use **integrated cloud tools** to help developers **efficiently scale across multiple markets and platforms**.
+The session also shares **practical strategies from successful studios**, demonstrating how intelligent localization workflows can **shorten development timelines, reduce crunch**, and **drive sustainable global growth**.
+
+#### - [AI – Your Development Ally: Build Smarter, Scale Faster (with Razer)](https://bizcommunity.gamescom.global/event/devcom-developer-conference-2025/planning/UGxhbm5pbmdfMjc0ODE3OA==)
+
+Tuesday, 8/19 | 13:15–13:45 | Stage 3, Confex 1 Floor
+
+Game quality assurance (QA) is often costly and time-consuming, extending development cycles and increasing operational costs.
+In this intimate conversation, Razer and AWS will present how Razer QA CO-AI can transform workflows by automatically detecting bugs, crashes, and performance issues during gameplay.
+As a result, developers can build higher-quality games faster and more efficiently.
 
 ---
 
-## Staging ER7 Microservice
+## New Solutions for Game Development
 
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
+Some new products and guidance from AWS for Games include:
+
+- **Guidance for Game Analytics Pipelines on AWS**: Updated architecture and code samples with comprehensive new features. Includes Terraform support, Apache Iceberg tables, Amazon Redshift Serverless integration, and Amazon Managed Service for Apache Flink. These improvements help game studios collect, store, and analyze game data faster and more flexibly in their preferred way. They provide powerful real-time insights while keeping management costs low and scalability high.
+
+- **Hydrolix for AWS**: Now available on AWS Marketplace. This is a SaaS observability solution for game studios, providing real-time observability and reasonable costs. During load testing, Hydrolix for AWS provides instant visibility into log data from multi-CDN, origin, and AWS edge services to identify performance bottlenecks and trace the root cause and trends across previous events.
+
+- **Guidance for Building Perforce Helix Core on AWS**: Now includes sample code as part of the Cloud Game Development Toolkit. This guidance shows how to install and configure Perforce P4 (Helix Core), a popular version control tool in game development, on AWS. By following this guidance, game developers can deploy Perforce P4 on AWS according to best practices while keeping costs low.
+
+- **Guidance for Intelligent Identification of 2D/3D Assets on AWS**: Features more cost-optimized architecture and new code samples to help game developers automatically identify and manage assets using AI/ML technology. This solution uses Amazon Rekognition to automatically analyze and tag assets as they are uploaded, helping teams save hundreds of hours of manual work while providing distributed creative teams with secure access and global asset search capabilities. These improvements help studios streamline asset workflows, enhance collaboration, and accelerate time-to-market through more efficient creative pipelines.
+
+During gamescom, AWS for Games experts will be available to meet Wednesday through Friday during exhibit hours at the devcom B2B lounge in Hall 4.1 C011.
 
 ---
 
-## New Features in the Solution
+## Connect with AWS
 
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+Visit the AWS for Games booth (A1) at devcom to see the latest services and solutions firsthand, while connecting with AWS gaming experts. You can also schedule time to meet with the AWS team through the gamescom biz website or event app.
+
+We look forward to meeting you at devcom and gamescom to explore cutting-edge technology together.
+
+---
+
+## About the Authors
+
+<div style="text-align: center;">
+  <img src="/images/3-BlogsTranslated/Blog1.1.png" style="width: 100%;" />
+</div>
