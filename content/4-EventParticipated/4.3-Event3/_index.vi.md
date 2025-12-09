@@ -1,12 +1,12 @@
 ---
-title: "AWS Cloud Mastery Series #3 - Chuyên sâu về Trụ cột Bảo mật"
+title: "AI-Driven Development Life Cycle: Reimagining Software Engineering."
 date: 2025-12-01
 weight: 3
 chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-### AWS Cloud Mastery Series #3 - Chuyên sâu về Trụ cột Bảo mật
+### AI-Driven Development Life Cycle: Reimagining Software Engineering.
 
 **- Ngày:** 1 tháng 12, 2025
 **- Địa điểm:** 	Bitexco Financial Tower, 2 Đ. Hải Triều, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh

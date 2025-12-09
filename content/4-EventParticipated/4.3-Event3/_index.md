@@ -1,12 +1,12 @@
 ---
-title: "AWS Cloud Mastery Series #3 - Deep Dive into AI-Driven Development"
+title: "AI-Driven Development Life Cycle: Reimagining Software Engineering."
 date: 2025-12-01
 weight: 3
 chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-### AWS Cloud Mastery Series #3 - Deep Dive into AI-Driven Development
+### AI-Driven Development Life Cycle: Reimagining Software Engineering.
 
 **- Date:** December 1, 2025
 **- Location:** Bitexco Financial Tower, 2 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City
