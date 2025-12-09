@@ -8,7 +8,7 @@ pre: " <b> 4.3. </b> "
 
 ### AI-Driven Development Life Cycle: Reimagining Software Engineering.
 
-**- Ngày:** 1 tháng 12, 2025
+**- Ngày:** 3 tháng 10, 2025
 **- Địa điểm:** 	Bitexco Financial Tower, 2 Đ. Hải Triều, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
 
 
