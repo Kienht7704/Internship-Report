@@ -7,31 +7,39 @@ pre: " <b> 1. </b> "
 ---
 
 
-**Trong trang này** bạn sẽ cần giới thiệu worklog của bạn **như thế nào**? Bạn hoàn thành chương trình trong vòng **bao nhiêu tuần**? Bạn **đã làm gì** trong các tuần đó?
+Đây là worklog của tôi trong suốt 12 tuần thực tập, từ tháng 9 đến tháng 11 năm 2025. Dưới đây là tóm tắt nội dung từng tuần:
+
+**Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản](1.1-week1/)
 
 
-Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
+**Tuần 2:** [AWS Budgets, IAM, S3, RDS, Auto Scaling](1.2-week2/)
 
-**Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản trong AWS](1.1-week1/)
 
-**Tuần 2:** [Làm công việc A...](1.2-week2/)
+**Tuần 3:** [CloudWatch, Route 53, AWS CLI](1.3-week3/)
 
-**Tuần 3:** [Làm công việc B...](1.3-week3/)
 
-**Tuần 4:** [Làm công việc C...](1.4-week4/)
+**Tuần 4:** [Static Website, Backup & Restore, VMware](1.4-week4/)
 
-**Tuần 5:** [Làm công việc D...](1.5-week5/)
 
-**Tuần 6:** [Làm công việc E...](1.6-week6/)
+**Tuần 5:** [Amazon Lightsail, Backup & Restore, Lab 57](1.5-week5/)
 
-**Tuần 7:** [Làm công việc G...](1.7-week7/)
 
-**Tuần 8:** [Làm công việc H...](1.8-week8/)
+**Tuần 6:** [Security & Compliance, IAM, Cognito, KMS, VPC](1.6-week6/)
 
-**Tuần 9:** [Làm công việc I...](1.9-week9/)
 
-**Tuần 10:** [Làm công việc L...](1.10-week10/)
+**Tuần 7:** [Automation & Monitoring (Lab 22), Resource Management (Lab 27), IAM (Lab 28)](1.7-week7/)
 
-**Tuần 11:** [Làm công việc M...](1.11-week11/)
 
-**Tuần 12:** [Làm công việc N...](1.12-week12/)
+**Tuần 8:** [Luyện thi, AWS Cloud Mastery Series #3](1.8-week8/)
+
+
+**Tuần 9:** [Database Fundamentals, Project Analysis, Proposal, UI Design](1.9-week9/)
+
+
+**Tuần 10:** [Lab 43 (EC2 & RDP), FrontEnd Development](1.10-week10/)
+
+
+**Tuần 11:** [Cognito Login, Proposal Rewrite, Project Testing, Code Review](1.11-week11/)
+
+
+**Tuần 12:** [Workshop Preparation, End-to-end Testing, Presentation Slides](1.12-week12/)

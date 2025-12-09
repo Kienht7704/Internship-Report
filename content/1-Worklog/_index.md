@@ -7,30 +7,40 @@ pre: " <b> 1. </b> "
 ---
 
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+This is my worklog throughout the 12-week internship, from September to November 2025. Below is a summary of the content for each week:
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+**Week 1:** [Getting familiar with AWS and basic services](1.1-week1/)
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Week 2:** [AWS Budgets, IAM, S3, RDS, Auto Scaling](1.2-week2/)
 
-**Week 3:** [Doing task B...](1.3-week3/)
 
-**Week 4:** [Doing task C...](1.4-week4/)
+**Week 3:** [CloudWatch, Route 53, AWS CLI](1.3-week3/)
 
-**Week 5:** [Doing task D...](1.5-week5/)
 
-**Week 6:** [Doing task E...](1.6-week6/)
+**Week 4:** [Static Website, Backup & Restore, VMware](1.4-week4/)
 
-**Week 7:** [Doing task G...](1.7-week7/)
 
-**Week 8:** [Doing task H...](1.8-week8/)
+**Week 5:** [Amazon Lightsail, Backup & Restore, Lab 57](1.5-week5/)
 
-**Week 9:** [Doing task I...](1.9-week9/)
 
-**Week 10:** [Doing task L...](1.10-week10/)
+**Week 6:** [Security & Compliance, IAM, Cognito, KMS, VPC](1.6-week6/)
 
-**Week 11:** [Doing task M...](1.11-week11/)
 
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 7:** [Automation & Monitoring (Lab 22), Resource Management (Lab 27), IAM (Lab 28)](1.7-week7/)
+
+
+**Week 8:** [Exam Preparation, AWS Cloud Mastery Series #3](1.8-week8/)
+
+
+**Week 9:** [Database Fundamentals, Project Analysis, Proposal, UI Design](1.9-week9/)
+
+
+**Week 10:** [Lab 43 (EC2 & RDP), FrontEnd Development](1.10-week10/)
+
+
+**Week 11:** [Cognito Login, Proposal Rewrite, Project Testing, Code Review](1.11-week11/)
+
+
+**Week 12:** [Workshop Preparation, End-to-end Testing, Presentation Slides](1.12-week12/)
+
