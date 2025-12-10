@@ -8,7 +8,7 @@ pre: " <b> 2. </b> "
 
 # Aurora Time  
 ## Giải pháp AWS Serverless hợp nhất cho quản lý thời gian cá nhân  
-[Tài liệu](https://docs.google.com/document/d/17JlwJN2M94RUWqWC3MY1dweCdifvsekYCMd9Det3rSM/edit?tab=t.0)
+[Tài liệu.](https://docs.google.com/document/d/17JlwJN2M94RUWqWC3MY1dweCdifvsekYCMd9Det3rSM/edit?tab=t.0)
 ### 1. Tóm tắt điều hành  
 Bản đề xuất này trình bày kế hoạch triển khai Aurora Time, một ứng dụng quản lý thời gian trên nền tảng AWS, đơn giản, tập trung vào tính năng lập lịch, nhằm giải quyết sự phức tạp và chi phí vận hành của các giải pháp hiện tại. Aurora Time sẽ tận dụng các dịch vụ serverless và managed service của AWS để đảm bảo khả năng mở rộng cao, độ tin cậy và chi phí tối ưu, mang lại lợi tức đầu tư (ROI) nhanh chóng thông qua giảm thiểu chi phí quản lý hạ tầng.  
 

@@ -8,7 +8,7 @@ pre: " <b> 2. </b> "
 
 # Aurora Time  
 ## Unified AWS Serverless Solution for Personal Time Management
-[Document](https://docs.google.com/document/d/17JlwJN2M94RUWqWC3MY1dweCdifvsekYCMd9Det3rSM/edit?tab=t.0)
+[Document.](https://docs.google.com/document/d/17JlwJN2M94RUWqWC3MY1dweCdifvsekYCMd9Det3rSM/edit?tab=t.0)
 ### 1. Executive Summary
 This proposal presents the implementation plan for Aurora Time, a time management application on the AWS platform, simple and focused on scheduling features, to address the complexity and operational costs of current solutions. Aurora Time will leverage AWS serverless and managed services to ensure high scalability, reliability, and cost optimization, delivering rapid return on investment (ROI) through reduced infrastructure management costs.
 
