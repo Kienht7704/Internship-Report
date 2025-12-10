@@ -8,7 +8,7 @@ pre: " <b> 2. </b> "
 
 # Aurora Time  
 ## Giải pháp AWS Serverless hợp nhất cho quản lý thời gian cá nhân  
-
+[Tài liệu](https://docs.google.com/document/d/17JlwJN2M94RUWqWC3MY1dweCdifvsekYCMd9Det3rSM/edit?tab=t.0)
 ### 1. Tóm tắt điều hành  
 Bản đề xuất này trình bày kế hoạch triển khai Aurora Time, một ứng dụng quản lý thời gian trên nền tảng AWS, đơn giản, tập trung vào tính năng lập lịch, nhằm giải quyết sự phức tạp và chi phí vận hành của các giải pháp hiện tại. Aurora Time sẽ tận dụng các dịch vụ serverless và managed service của AWS để đảm bảo khả năng mở rộng cao, độ tin cậy và chi phí tối ưu, mang lại lợi tức đầu tư (ROI) nhanh chóng thông qua giảm thiểu chi phí quản lý hạ tầng.  
 
@@ -17,7 +17,7 @@ Bản đề xuất này trình bày kế hoạch triển khai Aurora Time, một
 Cá nhân gặp khó khăn trong việc quản lý các cam kết hàng ngày vì lịch trình bị phân tán (ghi chú, điện thoại) dẫn đến dễ bị nhầm lẫn và bỏ sót. Các công cụ hiện tại thường quá phức tạp, nặng về tính năng công việc, không phù hợp cho nhu cầu lập lịch nhanh chóng và đơn giản của cuộc sống cá nhân. Aurora Time giải quyết bằng cách cung cấp một nền tảng tập trung hóa, tối giản và trực quan để dễ dàng theo dõi thói quen và các mốc quan trọng.  
 
 #### *Giải pháp*  
-Nền tảng sử dụng Amazon S3 kết hợp với Amazon CloudFront để lưu trữ và phân phối ứng dụng web, sử dụng AWS Amplify để phát triển và triển khai nhanh chóng. Amazon API Gateway và AWS Lambda hoạt động như lớp xử lý Backend để xử lý các yêu cầu CRUD sự kiện. Dữ liệu được lưu trữ trong Amazon DynamoDB để đảm bảo tốc độ truy cập nhanh, độ trễ thấp. Amazon Cognito đảm bảo xác thực và ủy quyền truy cập an toàn cho từng người dùng cá nhân. Amazon EventBridge và Amazon SES được sử dụng để kích hoạt và gửi các thông báo nhắc nhở theo lịch. Tương tự như các ứng dụng lịch khác, người dùng có thể tạo, chỉnh sửa lịch trình cá nhân, nhưng nền tảng này hoạt động ở quy mô tối giản hơn và phục vụ mục đích quản lý thời gian cá nhân hàng ngày. Các tính năng chính bao gồm giao diện lập lịch trực quan, nhắc nhở tùy chỉnh và chi phí vận hành thấp.  
+Nền tảng sử dụng Amazon S3 kết hợp với Amazon CloudFront để lưu trữ và phân phối ứng dụng web, sử dụng AWS Amplify để phát triển và triển khai nhanh chóng. Amazon API Gateway và AWS Lambda hoạt động như lớp xử lý Backend để xử lý các yêu cầu CRUD sự kiện. Dữ liệu được lưu trữ trong Amazon DynamoDB để đảm bảo tốc độ truy cập nhanh, độ trễ thấp. Amazon Cognito đảm bảo xác thực và ủy quyền truy cập an toàn cho từng người dùng cá nhân. Amazon EventBridge và Resend được sử dụng để kích hoạt và gửi các thông báo nhắc nhở theo lịch. Tương tự như các ứng dụng lịch khác, người dùng có thể tạo, chỉnh sửa lịch trình cá nhân, nhưng nền tảng này hoạt động ở quy mô tối giản hơn và phục vụ mục đích quản lý thời gian cá nhân hàng ngày. Các tính năng chính bao gồm giao diện lập lịch trực quan, nhắc nhở tùy chỉnh và chi phí vận hành thấp.  
 
 #### *Lợi ích và hoàn vốn đầu tư (ROI)*  
 Giải pháp Aurora Time tạo nền tảng vững chắc để người dùng cá nhân tập trung hóa mọi lịch trình, đồng thời cung cấp một mô hình kiến trúc Serverless tiết kiệm chi phí để dễ dàng mở rộng tính năng. Nền tảng này giảm bớt sự phân tán lịch trình và giảm thiểu việc bỏ sót các cam kết quan trọng thông qua hệ thống nhắc nhở tập trung, đơn giản hóa quản lý thời gian cá nhân và cải thiện sự cân bằng giữa công việc/cuộc sống.
@@ -37,7 +37,7 @@ Nền tảng áp dụng kiến trúc AWS Serverless để quản lý dữ liệu
 - *Amazon DynamoDB*: Lưu trữ dữ liệu sự kiện, lịch trình và thông tin người dùng.  
 - *Amazon S3 và CloudFront*: Lưu trữ và phân phối nội dung tĩnh của ứng dụng Frontend. 
 - *Amazon EventBride*: Lên lịch và kích hoạt các sự kiện nhắc nhở tự động theo thời gian đã định của người dùng.  
-- *Amazon SES*: Gửi thông báo nhắc nhở tùy chỉnh qua email (SES).
+- *Resend*: Gửi thông báo nhắc nhở tùy chỉnh qua email.
 - *AWS Amplify*: Lưu trữ và cung cấp giao diện web trực quan.
 - *Amazon Cognito*: Quản lý quyền truy cập và xác thực an toàn cho người dùng cá nhân. 
 
@@ -61,7 +61,7 @@ Dự án gồm 2 phần — thiết lập Backend Serverless và xây dựng Gia
 
 *1. Yêu cầu Backend (Serverless)*
 - *Dịch vụ cốt lõi*: Kiến thức chuyên sâu về AWS Lambda (Node.js), Amazon DynamoDB, Amazon API Gateway, và Amazon Cognito. 
-- *Quản lý Sự kiện*: Nắm vững Amazon EventBridge để lên lịch và kích hoạt các hàm Lambda gửi nhắc nhở qua Amazon SES/SNS.
+- *Quản lý Sự kiện*: Nắm vững Amazon EventBridge để lên lịch và kích hoạt các hàm Lambda gửi nhắc nhở qua Resend.
 
 *2. Yêu cần Frontend*
 - *Giao diện*: Kiến thức thực tế về AWS Amplify để lưu trữ ứng React và kết nối với API Gateway
@@ -80,16 +80,16 @@ Dự án gồm 2 phần — thiết lập Backend Serverless và xây dựng Gia
 - AWS Amplify: 0.35 USD/tháng 
 - S3 Standard: 0.05 USD/tháng  
 - CloudFront: 1.70 USD/tháng   
-- API Gateway: 0.11 USD/tháng
+- API Gateway: 0.00(miễn phí) USD/tháng
 - AWS Lambda: 0.00(miễn phí) USD/tháng   
 - DynamoDB: 0.11 USD/tháng  
 - Amazon Cognito: 0.00 USD/tháng   
-- Amazon SES(email): 0.05 USD/tháng
+- Resend(email): 0.00(miễn phí) USD/tháng
 - EventBridge: 0.10 USD/tháng  
 - CloudWatch Logs: 0.10 USD/tháng
 - CI/CD Pipeline+Build: 0.00(miễn phí) USD/tháng
 
-*Tổng*: 2,57 USD/tháng, 30,84 USD/12 tháng    
+*Tổng*: 2,41 USD/tháng, 28,92 USD/12 tháng    
 
 ### 7. Đánh giá rủi ro  
 *Ma trận rủi ro*  

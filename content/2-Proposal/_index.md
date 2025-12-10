@@ -8,7 +8,7 @@ pre: " <b> 2. </b> "
 
 # Aurora Time  
 ## Unified AWS Serverless Solution for Personal Time Management
-
+[Document](https://docs.google.com/document/d/17JlwJN2M94RUWqWC3MY1dweCdifvsekYCMd9Det3rSM/edit?tab=t.0)
 ### 1. Executive Summary
 This proposal presents the implementation plan for Aurora Time, a time management application on the AWS platform, simple and focused on scheduling features, to address the complexity and operational costs of current solutions. Aurora Time will leverage AWS serverless and managed services to ensure high scalability, reliability, and cost optimization, delivering rapid return on investment (ROI) through reduced infrastructure management costs.
 
@@ -17,7 +17,7 @@ This proposal presents the implementation plan for Aurora Time, a time managemen
 Individuals struggle to manage daily commitments because schedules are scattered (notes, phones) leading to confusion and missed tasks. Current tools are often too complex, overloaded with work features, and unsuitable for the need for quick and simple scheduling in personal life. Aurora Time solves this by providing a centralized, minimalist, and intuitive platform to easily track habits and important milestones.  
 
 #### *Solution*  
-The platform uses Amazon S3 combined with Amazon CloudFront to store and distribute web applications, using AWS Amplify for rapid development and deployment. Amazon API Gateway and AWS Lambda serve as the Backend processing layer to handle event CRUD requests. Data is stored in Amazon DynamoDB to ensure fast access speed and low latency. Amazon Cognito ensures secure authentication and authorization for each individual user. Amazon EventBridge and Amazon SES are used to trigger and send scheduled reminder notifications. Similar to other calendar applications, users can create and edit personal schedules, but this platform operates at a more minimalist scale and serves the purpose of daily personal time management. Key features include intuitive scheduling interface, customizable reminders, and low operational costs.  
+The platform uses Amazon S3 combined with Amazon CloudFront to store and distribute web applications, using AWS Amplify for rapid development and deployment. Amazon API Gateway and AWS Lambda serve as the Backend processing layer to handle event CRUD requests. Data is stored in Amazon DynamoDB to ensure fast access speed and low latency. Amazon Cognito ensures secure authentication and authorization for each individual user. Amazon EventBridge and Resend are used to trigger and send scheduled reminder notifications. Similar to other calendar applications, users can create and edit personal schedules, but this platform operates at a more minimalist scale and serves the purpose of daily personal time management. Key features include intuitive scheduling interface, customizable reminders, and low operational costs.  
 
 #### *Benefits and Return on Investment (ROI)*  
 The Aurora Time solution creates a solid foundation for individual users to centralize all schedules while providing a cost-saving Serverless architecture model for easy feature expansion. The platform reduces schedule fragmentation and minimizes missed important commitments through a centralized, simple reminder system, simplifying personal time management and improving work/life balance.
@@ -37,7 +37,7 @@ The platform applies AWS Serverless architecture to manage personal schedule and
 - *Amazon DynamoDB*: Stores event data, schedules, and user information.  
 - *Amazon S3 and CloudFront*: Stores and distributes static content of Frontend applications. 
 - *Amazon EventBridge*: Schedules and triggers automatic reminder events at user-defined times.  
-- *Amazon SES*: Sends customized reminder notifications via email (SES).
+- *Resend*: Sends customized reminder notifications via email (Resend).
 - *AWS Amplify*: Stores and provides intuitive web interface.
 - *Amazon Cognito*: Manages access permissions and secure authentication for individual users. 
 
@@ -63,7 +63,7 @@ The project consists of 2 parts — Backend Serverless setup and Frontend User I
 
 *1. Backend Requirements (Serverless)*
 - *Core Services*: In-depth knowledge of AWS Lambda (Node.js), Amazon DynamoDB, Amazon API Gateway, and Amazon Cognito. 
-- *Event Management*: Proficiency in Amazon EventBridge to schedule and trigger Lambda functions sending reminders via Amazon SES/SNS.
+- *Event Management*: Proficiency in Amazon EventBridge to schedule and trigger Lambda functions sending reminders via Resend.
 
 *2. Frontend Requirements*
 - *Interface*: Practical knowledge of AWS Amplify to host React applications and connect to API Gateway
@@ -82,16 +82,16 @@ The project consists of 2 parts — Backend Serverless setup and Frontend User I
 - AWS Amplify: $0.35/month 
 - S3 Standard: $0.05/month  
 - CloudFront: $1.70/month   
-- API Gateway: $0.11/month
+- API Gateway: $0.00 (free)/month
 - AWS Lambda: $0.00 (free) /month   
 - DynamoDB: $0.11/month  
 - Amazon Cognito: $0.00/month   
-- Amazon SES (email): $0.05/month
+- Resend(email): $0.00/month
 - EventBridge: $0.10/month  
 - CloudWatch Logs: $0.10/month
 - CI/CD Pipeline + Build: $0.00 (free) /month
 
-*Total*: $2.57/month, $30.84/12 months    
+*Total*: $2.41/month, $28,92/12 months    
 
 ### 7. Risk Assessment  
 *Risk Matrix*  
